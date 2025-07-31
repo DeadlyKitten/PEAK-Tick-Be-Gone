@@ -3,7 +3,7 @@ using HarmonyLib;
 
 namespace TickBeGone
 {
-    [BepInPlugin("com.steven.peak.tickbegone", "Tick-Be-Gone", "1.0.0")]
+    [BepInPlugin("com.steven.peak.tickbegone", "Tick-Be-Gone", "1.0.1")]
     public class TickPlugin : BaseUnityPlugin
     {
         private void Awake()

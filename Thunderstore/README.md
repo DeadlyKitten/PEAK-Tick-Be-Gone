@@ -7,3 +7,7 @@ This is a simple accessibilty mod that replaces the in-game tick model with a ge
 ---
 
 ![tick.png](https://i.imgur.com/WdsKzNB.png)
+
+---
+
+*Attribution: Cover icon was designed using resources from Flaticon.com*
