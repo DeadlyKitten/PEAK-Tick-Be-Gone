@@ -16,6 +16,7 @@ namespace TickBeGone.Patches
             sphere.transform.localPosition = collider.center;
             sphere.transform.localScale = Vector3.one * collider.radius * 2f;
             sphere.GetComponent<MeshRenderer>().sharedMaterial = tickMesh.sharedMaterial;
+            GameObject.Destroy(sphere.GetComponent<SphereCollider>());
 
             tickMesh.gameObject.SetActive(false);
         }
