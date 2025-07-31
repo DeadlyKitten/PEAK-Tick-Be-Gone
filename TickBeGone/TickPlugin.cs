@@ -11,8 +11,10 @@ namespace TickBeGone
             var harmony = new Harmony("com.steven.peak.tickbegone");
             harmony.PatchAll();
 
+#if DEBUG
             var bugfixer = gameObject.AddComponent<Bugfixer>();
             bugfixer.useLocalCharacter = true;
+#endif
         }
     }
 }
