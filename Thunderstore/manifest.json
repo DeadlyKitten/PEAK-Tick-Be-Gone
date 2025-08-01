@@ -1,6 +1,6 @@
 {
     "name": "Tick_Be_Gone",
-    "version_number": "1.0.0",
+    "version_number": "1.0.1",
     "website_url": "https://github.com/DeadlyKitten/PEAK-Tick-Be-Gone",
     "description": "Replaces the tick model with a generic sphere.",
     "dependencies": [
