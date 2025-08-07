@@ -1,8 +1,8 @@
 {
     "name": "Tick_Be_Gone",
-    "version_number": "1.0.1",
+    "version_number": "2.0.0",
     "website_url": "https://github.com/DeadlyKitten/PEAK-Tick-Be-Gone",
-    "description": "Replaces the tick model with a generic sphere.",
+    "description": "Adds accessibility options to modify the tick item.",
     "dependencies": [
         "BepInEx-BepInExPack_PEAK-5.4.2403"
     ]

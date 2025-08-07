@@ -11,14 +11,13 @@ namespace TickBeGone.Patches
             var collider = __instance.GetComponent<SphereCollider>();
             var tickMesh = __instance.GetComponentInChildren<MeshRenderer>();
 
-            var sphere = GameObject.CreatePrimitive(PrimitiveType.Sphere);
-            sphere.transform.parent = __instance.transform;
-            sphere.transform.localPosition = collider.center;
-            sphere.transform.localScale = Vector3.one * collider.radius * 2f;
-            sphere.GetComponent<MeshRenderer>().sharedMaterial = tickMesh.sharedMaterial;
-            GameObject.Destroy(sphere.GetComponent<SphereCollider>());
+            if (BugUtilities.TryCensorBug(__instance.transform, collider.center, Vector3.one * collider.radius * 2f, tickMesh.sharedMaterial))
+                tickMesh.gameObject.SetActive(false);
+            else
+                BugUtilities.CensorOldBug(tickMesh);
 
-            tickMesh.gameObject.SetActive(false);
+            if (Configuration.UseIconOverride)
+                __instance.bugItem.UIData.icon = TickPlugin.GetRandomCat(true);
         }
     }
 }
